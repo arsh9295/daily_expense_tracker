@@ -1,0 +1,5 @@
+mysqlclient
+pyttsx3
+django
+sqlparser
+virtualenv
