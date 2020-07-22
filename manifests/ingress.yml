@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "utkarshaks-20a3"
+    labels:
+        app: "utkarshaks-20a3"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: utkarshaks0df1-utkarshaks-20a3.61a3b2ec18ca438ea7a8.centralus.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "utkarshaks-20a3"
+                servicePort: 8000
