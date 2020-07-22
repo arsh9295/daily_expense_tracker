@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: "utkarshaks-20a3"
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "utkarshaks-20a3"
+    spec:
+      containers:
+        - name: "utkarshaks-20a3"
+          image: "utkarshaksreg.azurecr.io/utkarshaks"
+          ports:
+          - containerPort: 8000
